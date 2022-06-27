@@ -1,5 +1,4 @@
 <?php
-require_once('blowfish.php');
 class task
 {
     public $id;
@@ -20,7 +19,7 @@ class task
     }
     public function descrizione(){
         
-        return openssl_private_decrypt($this->descrizione, $decrypted, $this->privKey);
+        return $this->descrizione();
     }
 
 }

@@ -4,7 +4,7 @@ $database= $config["database"];
 
 
 $newTask = [
-    "descrizione"=>$crypt->encrypt($_POST["descrizione"]),
+    "descrizione"=>$_POST["descrizione"],
     "terminata"=>"false"
 ];
 //die(var_dump($newTask));
